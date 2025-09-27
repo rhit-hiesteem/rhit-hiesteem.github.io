@@ -1,5 +1,6 @@
 :root {
     --nav-gray: rgb(161, 161, 161);
+    --dark-gray: rgb(79, 79, 79);
 }
 
 body {
@@ -101,7 +102,7 @@ footer {
 
 footer h1 {
     font-size: 1.5em;
-    color: rgb(62, 62, 62);
+    color: var(--dark-gray);
 }
 
 .footer-link {
@@ -117,7 +118,7 @@ footer li {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1.2em;
-    color: rgb(104, 104, 104);
+    color: var(--dark-gray);
     margin: auto 10px;
 }
 
@@ -131,3 +132,84 @@ footer ul {
     margin: 10px;
 }
 /* FOOTER STYLES END */
+
+/* RESUME STYLES */
+
+.resume-header {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--dark-gray);
+    margin: 1em;
+}
+
+.resume-section {
+    margin: 3em;
+}
+
+.resume-list {
+    width: 60%;
+    margin: 0px auto;
+    padding-left: 10px;
+}
+
+.resume-list li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin: 5px;
+}
+
+/* PORTFOLIO STYLES */
+
+#platformer-game-image {
+    width: 40%;
+}
+
+/* https://www.w3schools.com/csS/css3_object-fit.asp was having trouble with aspect ratio*/
+#verb-vault-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.portfolio-section {
+    margin: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-section-header {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--dark-gray);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.portfolio-description-container {
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    /* https://www.w3schools.com/cssref/css3_pr_transition.php/css3_pr_opacity.php */
+    transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    -ms-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+}
+
+.portfolio-description-container.show {
+    opacity: 1;
+}
+
+.portfolio-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 80%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    text-align: left;
+}
