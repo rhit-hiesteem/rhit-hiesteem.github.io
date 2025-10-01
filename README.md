@@ -1,1 +1,1 @@
-Visit: http://https://rhit-hiesteem.github.io/
+Visit: https://rhit-hiesteem.github.io/
