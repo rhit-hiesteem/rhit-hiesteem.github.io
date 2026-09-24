@@ -1,0 +1,231 @@
+:root {
+    --nav-background: rgb(51, 85, 85);
+    --body-background: rgb(20, 40, 40);
+    --main-background: rgb(5, 20, 20)
+}
+
+/* ------------- NAVBAR STYLES ------------- */
+nav {
+    width: 95%;
+    text-align: center;
+    background-color: var(--nav-background);
+    border-radius: 10px;
+    margin: 10px auto;
+
+}
+
+nav ul, footer ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav li, footer li {
+    display: inline-block;
+    margin: 20px 30px;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-underline-offset: 5px;
+}
+
+nav li:hover, footer li:hover {
+    color: white;
+    text-decoration: underline white solid 1.5px;
+}
+
+nav a, footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ------------ FOOTER STYLES ---------------*/
+
+/* make links light blueish if it hasnt been visited*/
+footer a:link {
+    color: rgb(125, 168, 177);
+}
+
+footer a:visited {
+    color: lightgray;
+}
+
+footer {
+    width: 95%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: var(--main-background);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+footer p {
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    /* font-weight: bold; */
+    margin-bottom: 0px;
+}
+
+footer ul {
+    padding-left: 30px;
+    margin: 0px;
+}
+
+/* ------------ MAIN STYLES ----------------- */
+
+body {
+    background-color: var(--body-background);
+}
+
+main {
+    width: 95%;
+    background-color: var(--main-background);
+    /* height: 600px; */
+    margin: 0 auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+hr {
+    color: lightgray;
+    /* border-color: lightgray; */
+    border-width: 1px;
+}
+
+/* -------- HOME STYLES ------------ */
+#elliot-image {
+    width: 500px;
+    margin: 10px;
+}
+
+.description-paragraph {
+    color: lightgray;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+/* ------------- RESUME STYLES --------------- */
+
+.resume-list li {
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.resume-section {
+    margin: 20px 10px;
+}
+
+.resume-header-button {
+    background: none;
+    border: none;
+    font-size: inherit;
+    padding-top: 3px;
+}
+
+.resume-header-button h1 {
+    padding: 3px;
+}
+
+.resume-header-button h1:hover {
+    background-color: darkslategray;
+}
+
+.resume-header-button .title { /* so the span shows up next to the h1 */
+    display: inline-block;
+}
+
+/* Animation idea and some code from these sites */
+/* https://www.w3schools.com/css/css3_transitions.asp */
+/* https://stackoverflow.com/questions/8449933/how-to-transition-css-display-opacity-properties */
+.resume-header-button+ul {
+    /* opacity: 1; */
+    /* max-height: 500px; */
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+.hidden {
+    /* display: none; */
+    max-height: 0px;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.click-here {
+    color: gray;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* ------------ PORTFOLIO STYLES ------------- */
+
+#fitness-tracker-image {
+    width: 400px;
+}
+
+#platformer-image {
+    width: 400px;
+}
+
+#verb-vault-image {
+    width: 500px;
+}
+
+.portfolio-image {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* .portfolio-image:hover {
+    background-color: gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} */
+
+.portfolio-description {
+    color: lightgray;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    /* display: inline-block; */
+    /* width: 45%; */
+}
+
+.align-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+
+
